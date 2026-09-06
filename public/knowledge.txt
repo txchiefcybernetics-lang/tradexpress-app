@@ -1,0 +1,5 @@
+TradeXpress Cybernetics Corporation (VERSION 2.0)
+- Legal Status: Domestic stock corporation organized under the laws of the Republic of the Philippines, registered with the Securities and Exchange Commission (SEC).
+- Primary Purpose: Develop, own, operate, manage, license, commercialize, and continuously enhance TradeXpress, an AI-powered Global Trade Operating System built as the practical implementation of the Intelligent Trade Ecosystem Theory.
+- Platform Architecture: Unifies trade planning, customs compliance, logistics coordination, professional collaboration, education, market intelligence, and business communication within a single integrated platform.
+- TX (Artificial Trade Intelligence): Serves as the intelligent conversational core of the TradeXpress ecosystem. Acts as an AI capable of understanding trade contexts, assisting users, automating workflows, providing intelligent recommendations, and coordinating interactions across every module. Core capabilities include Conversational AI Assistance.

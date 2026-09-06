@@ -1,0 +1,1985 @@
+
+> tradexpress-app@0.1.0 build
+> next build
+
+▲ Next.js 16.2.12 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+  Using external babel configuration from /home/tx/tradexpress-app/babel.config.js
+
+> Build error occurred
+Error: Turbopack build failed with 27 errors:
+./app/ai-command-center/page.tsx
+Error evaluating Node.js code
+Error: Cannot find module 'babel-plugin-react-compiler'
+Require stack:
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/traverse.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/transform.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/index.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/tx/tradexpress-app/.next/build/chunks/[root-of-the-server]__0x8m--0._.js
+- /home/tx/tradexpress-app/.next/build/chunks/[turbopack]_runtime.js
+- /home/tx/tradexpress-app/.next/build/cf208e1b0e4c4caf.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    [at file. It's possible that the missing plugin is loaded by a preset]
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)]
+    [at resolve (node:internal/modules/helpers:157:19)]
+    [at tryRequireResolve (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:93868)]
+    [at resolveStandardizedNameForRequire (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94220)]
+    [at resolveStandardizedName (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94678)]
+    [at loadPlugin (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:91953)]
+    [at <anonymous>]
+    [at createDescriptor (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75929)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40260]
+    [at <anonymous>]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40252)]
+    [at Function.all (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at createDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75384)]
+    [at <anonymous>]
+    [at createPluginDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75287)]
+    [at <anonymous>]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:74768]
+    [at <anonymous>]
+    [at Function.<anonymous> (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135323)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135948)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42220)]
+    [at onFirstPause (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at cachedFunction (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:59444)]
+    [at <anonymous>]
+    [at mergeChainOpts (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70745)]
+    [at <anonymous>]
+    [at chainWalker (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70019)]
+    [at <anonymous>]
+    [at buildRootChain (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:64515)]
+    [at <anonymous>]
+    [at loadPrivatePartialConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:110517)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:96989)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106637)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:133753)]
+    [at loadOptionsSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106876)]
+    [at loadOptions (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:107065)]
+    [at getFreshConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+
+
+./app/auth/callback/route.ts
+Error evaluating Node.js code
+Error: Cannot find module 'babel-plugin-react-compiler'
+Require stack:
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/traverse.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/transform.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/index.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/tx/tradexpress-app/.next/build/chunks/[root-of-the-server]__0x8m--0._.js
+- /home/tx/tradexpress-app/.next/build/chunks/[turbopack]_runtime.js
+- /home/tx/tradexpress-app/.next/build/cf208e1b0e4c4caf.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    [at file. It's possible that the missing plugin is loaded by a preset]
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)]
+    [at resolve (node:internal/modules/helpers:157:19)]
+    [at tryRequireResolve (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:93868)]
+    [at resolveStandardizedNameForRequire (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94220)]
+    [at resolveStandardizedName (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94678)]
+    [at loadPlugin (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:91953)]
+    [at <anonymous>]
+    [at createDescriptor (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75929)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40260]
+    [at <anonymous>]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40252)]
+    [at Function.all (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at createDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75384)]
+    [at <anonymous>]
+    [at createPluginDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75287)]
+    [at <anonymous>]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:74768]
+    [at <anonymous>]
+    [at Function.<anonymous> (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135323)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135948)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42220)]
+    [at onFirstPause (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at cachedFunction (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:59444)]
+    [at <anonymous>]
+    [at mergeChainOpts (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70745)]
+    [at <anonymous>]
+    [at chainWalker (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70019)]
+    [at <anonymous>]
+    [at buildRootChain (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:64515)]
+    [at <anonymous>]
+    [at loadPrivatePartialConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:110517)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:96989)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106637)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:133753)]
+    [at loadOptionsSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106876)]
+    [at loadOptions (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:107065)]
+    [at getFreshConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+
+
+./app/console/page.tsx
+Error evaluating Node.js code
+Error: Cannot find module 'babel-plugin-react-compiler'
+Require stack:
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/traverse.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/transform.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/index.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/tx/tradexpress-app/.next/build/chunks/[root-of-the-server]__0x8m--0._.js
+- /home/tx/tradexpress-app/.next/build/chunks/[turbopack]_runtime.js
+- /home/tx/tradexpress-app/.next/build/cf208e1b0e4c4caf.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    [at file. It's possible that the missing plugin is loaded by a preset]
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)]
+    [at resolve (node:internal/modules/helpers:157:19)]
+    [at tryRequireResolve (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:93868)]
+    [at resolveStandardizedNameForRequire (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94220)]
+    [at resolveStandardizedName (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94678)]
+    [at loadPlugin (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:91953)]
+    [at <anonymous>]
+    [at createDescriptor (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75929)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40260]
+    [at <anonymous>]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40252)]
+    [at Function.all (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at createDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75384)]
+    [at <anonymous>]
+    [at createPluginDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75287)]
+    [at <anonymous>]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:74768]
+    [at <anonymous>]
+    [at Function.<anonymous> (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135323)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135948)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42220)]
+    [at onFirstPause (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at cachedFunction (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:59444)]
+    [at <anonymous>]
+    [at mergeChainOpts (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70745)]
+    [at <anonymous>]
+    [at chainWalker (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70019)]
+    [at <anonymous>]
+    [at buildRootChain (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:64515)]
+    [at <anonymous>]
+    [at loadPrivatePartialConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:110517)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:96989)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106637)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:133753)]
+    [at loadOptionsSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106876)]
+    [at loadOptions (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:107065)]
+    [at getFreshConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+
+
+./app/console/tunnels/page.tsx
+Error evaluating Node.js code
+Error: Cannot find module 'babel-plugin-react-compiler'
+Require stack:
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/traverse.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/transform.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/index.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/tx/tradexpress-app/.next/build/chunks/[root-of-the-server]__0x8m--0._.js
+- /home/tx/tradexpress-app/.next/build/chunks/[turbopack]_runtime.js
+- /home/tx/tradexpress-app/.next/build/cf208e1b0e4c4caf.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    [at file. It's possible that the missing plugin is loaded by a preset]
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)]
+    [at resolve (node:internal/modules/helpers:157:19)]
+    [at tryRequireResolve (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:93868)]
+    [at resolveStandardizedNameForRequire (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94220)]
+    [at resolveStandardizedName (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94678)]
+    [at loadPlugin (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:91953)]
+    [at <anonymous>]
+    [at createDescriptor (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75929)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40260]
+    [at <anonymous>]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40252)]
+    [at Function.all (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at createDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75384)]
+    [at <anonymous>]
+    [at createPluginDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75287)]
+    [at <anonymous>]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:74768]
+    [at <anonymous>]
+    [at Function.<anonymous> (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135323)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135948)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42220)]
+    [at onFirstPause (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at cachedFunction (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:59444)]
+    [at <anonymous>]
+    [at mergeChainOpts (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70745)]
+    [at <anonymous>]
+    [at chainWalker (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70019)]
+    [at <anonymous>]
+    [at buildRootChain (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:64515)]
+    [at <anonymous>]
+    [at loadPrivatePartialConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:110517)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:96989)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106637)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:133753)]
+    [at loadOptionsSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106876)]
+    [at loadOptions (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:107065)]
+    [at getFreshConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+
+
+./app/dashboard/ai/error.tsx
+Error evaluating Node.js code
+Error: Cannot find module 'babel-plugin-react-compiler'
+Require stack:
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/traverse.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/transform.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/index.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/tx/tradexpress-app/.next/build/chunks/[root-of-the-server]__0x8m--0._.js
+- /home/tx/tradexpress-app/.next/build/chunks/[turbopack]_runtime.js
+- /home/tx/tradexpress-app/.next/build/cf208e1b0e4c4caf.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    [at file. It's possible that the missing plugin is loaded by a preset]
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)]
+    [at resolve (node:internal/modules/helpers:157:19)]
+    [at tryRequireResolve (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:93868)]
+    [at resolveStandardizedNameForRequire (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94220)]
+    [at resolveStandardizedName (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94678)]
+    [at loadPlugin (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:91953)]
+    [at <anonymous>]
+    [at createDescriptor (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75929)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40260]
+    [at <anonymous>]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40252)]
+    [at Function.all (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at createDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75384)]
+    [at <anonymous>]
+    [at createPluginDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75287)]
+    [at <anonymous>]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:74768]
+    [at <anonymous>]
+    [at Function.<anonymous> (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135323)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135948)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42220)]
+    [at onFirstPause (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at cachedFunction (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:59444)]
+    [at <anonymous>]
+    [at mergeChainOpts (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70745)]
+    [at <anonymous>]
+    [at chainWalker (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70019)]
+    [at <anonymous>]
+    [at buildRootChain (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:64515)]
+    [at <anonymous>]
+    [at loadPrivatePartialConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:110517)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:96989)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106637)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:133753)]
+    [at loadOptionsSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106876)]
+    [at loadOptions (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:107065)]
+    [at getFreshConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+
+
+./app/dashboard/ai/page.tsx
+Error evaluating Node.js code
+Error: Cannot find module 'babel-plugin-react-compiler'
+Require stack:
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/traverse.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/transform.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/index.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/tx/tradexpress-app/.next/build/chunks/[root-of-the-server]__0x8m--0._.js
+- /home/tx/tradexpress-app/.next/build/chunks/[turbopack]_runtime.js
+- /home/tx/tradexpress-app/.next/build/cf208e1b0e4c4caf.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    [at file. It's possible that the missing plugin is loaded by a preset]
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)]
+    [at resolve (node:internal/modules/helpers:157:19)]
+    [at tryRequireResolve (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:93868)]
+    [at resolveStandardizedNameForRequire (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94220)]
+    [at resolveStandardizedName (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94678)]
+    [at loadPlugin (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:91953)]
+    [at <anonymous>]
+    [at createDescriptor (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75929)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40260]
+    [at <anonymous>]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40252)]
+    [at Function.all (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at createDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75384)]
+    [at <anonymous>]
+    [at createPluginDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75287)]
+    [at <anonymous>]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:74768]
+    [at <anonymous>]
+    [at Function.<anonymous> (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135323)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135948)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42220)]
+    [at onFirstPause (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at cachedFunction (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:59444)]
+    [at <anonymous>]
+    [at mergeChainOpts (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70745)]
+    [at <anonymous>]
+    [at chainWalker (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70019)]
+    [at <anonymous>]
+    [at buildRootChain (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:64515)]
+    [at <anonymous>]
+    [at loadPrivatePartialConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:110517)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:96989)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106637)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:133753)]
+    [at loadOptionsSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106876)]
+    [at loadOptions (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:107065)]
+    [at getFreshConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+
+
+./app/dashboard/analytics/page.tsx
+Error evaluating Node.js code
+Error: Cannot find module 'babel-plugin-react-compiler'
+Require stack:
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/traverse.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/transform.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/index.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/tx/tradexpress-app/.next/build/chunks/[root-of-the-server]__0x8m--0._.js
+- /home/tx/tradexpress-app/.next/build/chunks/[turbopack]_runtime.js
+- /home/tx/tradexpress-app/.next/build/cf208e1b0e4c4caf.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    [at file. It's possible that the missing plugin is loaded by a preset]
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)]
+    [at resolve (node:internal/modules/helpers:157:19)]
+    [at tryRequireResolve (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:93868)]
+    [at resolveStandardizedNameForRequire (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94220)]
+    [at resolveStandardizedName (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94678)]
+    [at loadPlugin (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:91953)]
+    [at <anonymous>]
+    [at createDescriptor (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75929)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40260]
+    [at <anonymous>]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40252)]
+    [at Function.all (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at createDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75384)]
+    [at <anonymous>]
+    [at createPluginDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75287)]
+    [at <anonymous>]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:74768]
+    [at <anonymous>]
+    [at Function.<anonymous> (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135323)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135948)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42220)]
+    [at onFirstPause (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at cachedFunction (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:59444)]
+    [at <anonymous>]
+    [at mergeChainOpts (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70745)]
+    [at <anonymous>]
+    [at chainWalker (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70019)]
+    [at <anonymous>]
+    [at buildRootChain (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:64515)]
+    [at <anonymous>]
+    [at loadPrivatePartialConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:110517)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:96989)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106637)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:133753)]
+    [at loadOptionsSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106876)]
+    [at loadOptions (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:107065)]
+    [at getFreshConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+
+
+./app/dashboard/brokerage/page.tsx
+Error evaluating Node.js code
+Error: Cannot find module 'babel-plugin-react-compiler'
+Require stack:
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/traverse.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/transform.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/index.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/tx/tradexpress-app/.next/build/chunks/[root-of-the-server]__0x8m--0._.js
+- /home/tx/tradexpress-app/.next/build/chunks/[turbopack]_runtime.js
+- /home/tx/tradexpress-app/.next/build/cf208e1b0e4c4caf.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    [at file. It's possible that the missing plugin is loaded by a preset]
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)]
+    [at resolve (node:internal/modules/helpers:157:19)]
+    [at tryRequireResolve (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:93868)]
+    [at resolveStandardizedNameForRequire (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94220)]
+    [at resolveStandardizedName (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94678)]
+    [at loadPlugin (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:91953)]
+    [at <anonymous>]
+    [at createDescriptor (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75929)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40260]
+    [at <anonymous>]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40252)]
+    [at Function.all (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at createDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75384)]
+    [at <anonymous>]
+    [at createPluginDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75287)]
+    [at <anonymous>]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:74768]
+    [at <anonymous>]
+    [at Function.<anonymous> (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135323)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135948)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42220)]
+    [at onFirstPause (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at cachedFunction (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:59444)]
+    [at <anonymous>]
+    [at mergeChainOpts (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70745)]
+    [at <anonymous>]
+    [at chainWalker (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70019)]
+    [at <anonymous>]
+    [at buildRootChain (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:64515)]
+    [at <anonymous>]
+    [at loadPrivatePartialConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:110517)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:96989)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106637)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:133753)]
+    [at loadOptionsSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106876)]
+    [at loadOptions (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:107065)]
+    [at getFreshConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+
+
+./app/dashboard/compliance/page.tsx
+Error evaluating Node.js code
+Error: Cannot find module 'babel-plugin-react-compiler'
+Require stack:
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/traverse.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/transform.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/index.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/tx/tradexpress-app/.next/build/chunks/[root-of-the-server]__0x8m--0._.js
+- /home/tx/tradexpress-app/.next/build/chunks/[turbopack]_runtime.js
+- /home/tx/tradexpress-app/.next/build/cf208e1b0e4c4caf.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    [at file. It's possible that the missing plugin is loaded by a preset]
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)]
+    [at resolve (node:internal/modules/helpers:157:19)]
+    [at tryRequireResolve (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:93868)]
+    [at resolveStandardizedNameForRequire (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94220)]
+    [at resolveStandardizedName (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94678)]
+    [at loadPlugin (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:91953)]
+    [at <anonymous>]
+    [at createDescriptor (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75929)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40260]
+    [at <anonymous>]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40252)]
+    [at Function.all (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at createDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75384)]
+    [at <anonymous>]
+    [at createPluginDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75287)]
+    [at <anonymous>]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:74768]
+    [at <anonymous>]
+    [at Function.<anonymous> (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135323)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135948)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42220)]
+    [at onFirstPause (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at cachedFunction (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:59444)]
+    [at <anonymous>]
+    [at mergeChainOpts (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70745)]
+    [at <anonymous>]
+    [at chainWalker (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70019)]
+    [at <anonymous>]
+    [at buildRootChain (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:64515)]
+    [at <anonymous>]
+    [at loadPrivatePartialConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:110517)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:96989)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106637)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:133753)]
+    [at loadOptionsSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106876)]
+    [at loadOptions (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:107065)]
+    [at getFreshConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+
+
+./app/dashboard/enterprise/page.tsx
+Error evaluating Node.js code
+Error: Cannot find module 'babel-plugin-react-compiler'
+Require stack:
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/traverse.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/transform.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/index.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/tx/tradexpress-app/.next/build/chunks/[root-of-the-server]__0x8m--0._.js
+- /home/tx/tradexpress-app/.next/build/chunks/[turbopack]_runtime.js
+- /home/tx/tradexpress-app/.next/build/cf208e1b0e4c4caf.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    [at file. It's possible that the missing plugin is loaded by a preset]
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)]
+    [at resolve (node:internal/modules/helpers:157:19)]
+    [at tryRequireResolve (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:93868)]
+    [at resolveStandardizedNameForRequire (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94220)]
+    [at resolveStandardizedName (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94678)]
+    [at loadPlugin (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:91953)]
+    [at <anonymous>]
+    [at createDescriptor (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75929)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40260]
+    [at <anonymous>]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40252)]
+    [at Function.all (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at createDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75384)]
+    [at <anonymous>]
+    [at createPluginDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75287)]
+    [at <anonymous>]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:74768]
+    [at <anonymous>]
+    [at Function.<anonymous> (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135323)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135948)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42220)]
+    [at onFirstPause (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at cachedFunction (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:59444)]
+    [at <anonymous>]
+    [at mergeChainOpts (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70745)]
+    [at <anonymous>]
+    [at chainWalker (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70019)]
+    [at <anonymous>]
+    [at buildRootChain (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:64515)]
+    [at <anonymous>]
+    [at loadPrivatePartialConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:110517)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:96989)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106637)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:133753)]
+    [at loadOptionsSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106876)]
+    [at loadOptions (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:107065)]
+    [at getFreshConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+
+
+./app/dashboard/executive/page.tsx
+Error evaluating Node.js code
+Error: Cannot find module 'babel-plugin-react-compiler'
+Require stack:
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/traverse.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/transform.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/index.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/tx/tradexpress-app/.next/build/chunks/[root-of-the-server]__0x8m--0._.js
+- /home/tx/tradexpress-app/.next/build/chunks/[turbopack]_runtime.js
+- /home/tx/tradexpress-app/.next/build/cf208e1b0e4c4caf.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    [at file. It's possible that the missing plugin is loaded by a preset]
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)]
+    [at resolve (node:internal/modules/helpers:157:19)]
+    [at tryRequireResolve (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:93868)]
+    [at resolveStandardizedNameForRequire (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94220)]
+    [at resolveStandardizedName (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94678)]
+    [at loadPlugin (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:91953)]
+    [at <anonymous>]
+    [at createDescriptor (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75929)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40260]
+    [at <anonymous>]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40252)]
+    [at Function.all (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at createDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75384)]
+    [at <anonymous>]
+    [at createPluginDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75287)]
+    [at <anonymous>]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:74768]
+    [at <anonymous>]
+    [at Function.<anonymous> (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135323)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135948)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42220)]
+    [at onFirstPause (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at cachedFunction (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:59444)]
+    [at <anonymous>]
+    [at mergeChainOpts (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70745)]
+    [at <anonymous>]
+    [at chainWalker (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70019)]
+    [at <anonymous>]
+    [at buildRootChain (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:64515)]
+    [at <anonymous>]
+    [at loadPrivatePartialConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:110517)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:96989)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106637)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:133753)]
+    [at loadOptionsSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106876)]
+    [at loadOptions (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:107065)]
+    [at getFreshConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+
+
+./app/dashboard/finance/page.tsx
+Error evaluating Node.js code
+Error: Cannot find module 'babel-plugin-react-compiler'
+Require stack:
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/traverse.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/transform.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/index.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/tx/tradexpress-app/.next/build/chunks/[root-of-the-server]__0x8m--0._.js
+- /home/tx/tradexpress-app/.next/build/chunks/[turbopack]_runtime.js
+- /home/tx/tradexpress-app/.next/build/cf208e1b0e4c4caf.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    [at file. It's possible that the missing plugin is loaded by a preset]
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)]
+    [at resolve (node:internal/modules/helpers:157:19)]
+    [at tryRequireResolve (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:93868)]
+    [at resolveStandardizedNameForRequire (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94220)]
+    [at resolveStandardizedName (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94678)]
+    [at loadPlugin (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:91953)]
+    [at <anonymous>]
+    [at createDescriptor (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75929)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40260]
+    [at <anonymous>]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40252)]
+    [at Function.all (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at createDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75384)]
+    [at <anonymous>]
+    [at createPluginDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75287)]
+    [at <anonymous>]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:74768]
+    [at <anonymous>]
+    [at Function.<anonymous> (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135323)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135948)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42220)]
+    [at onFirstPause (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at cachedFunction (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:59444)]
+    [at <anonymous>]
+    [at mergeChainOpts (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70745)]
+    [at <anonymous>]
+    [at chainWalker (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70019)]
+    [at <anonymous>]
+    [at buildRootChain (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:64515)]
+    [at <anonymous>]
+    [at loadPrivatePartialConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:110517)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:96989)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106637)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:133753)]
+    [at loadOptionsSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106876)]
+    [at loadOptions (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:107065)]
+    [at getFreshConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+
+
+./app/dashboard/hr/page.tsx
+Error evaluating Node.js code
+Error: Cannot find module 'babel-plugin-react-compiler'
+Require stack:
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/traverse.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/transform.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/index.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/tx/tradexpress-app/.next/build/chunks/[root-of-the-server]__0x8m--0._.js
+- /home/tx/tradexpress-app/.next/build/chunks/[turbopack]_runtime.js
+- /home/tx/tradexpress-app/.next/build/cf208e1b0e4c4caf.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    [at file. It's possible that the missing plugin is loaded by a preset]
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)]
+    [at resolve (node:internal/modules/helpers:157:19)]
+    [at tryRequireResolve (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:93868)]
+    [at resolveStandardizedNameForRequire (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94220)]
+    [at resolveStandardizedName (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94678)]
+    [at loadPlugin (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:91953)]
+    [at <anonymous>]
+    [at createDescriptor (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75929)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40260]
+    [at <anonymous>]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40252)]
+    [at Function.all (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at createDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75384)]
+    [at <anonymous>]
+    [at createPluginDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75287)]
+    [at <anonymous>]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:74768]
+    [at <anonymous>]
+    [at Function.<anonymous> (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135323)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135948)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42220)]
+    [at onFirstPause (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at cachedFunction (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:59444)]
+    [at <anonymous>]
+    [at mergeChainOpts (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70745)]
+    [at <anonymous>]
+    [at chainWalker (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70019)]
+    [at <anonymous>]
+    [at buildRootChain (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:64515)]
+    [at <anonymous>]
+    [at loadPrivatePartialConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:110517)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:96989)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106637)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:133753)]
+    [at loadOptionsSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106876)]
+    [at loadOptions (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:107065)]
+    [at getFreshConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+
+
+./app/dashboard/layout.tsx
+Error evaluating Node.js code
+Error: Cannot find module 'babel-plugin-react-compiler'
+Require stack:
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/traverse.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/transform.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/index.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/tx/tradexpress-app/.next/build/chunks/[root-of-the-server]__0x8m--0._.js
+- /home/tx/tradexpress-app/.next/build/chunks/[turbopack]_runtime.js
+- /home/tx/tradexpress-app/.next/build/cf208e1b0e4c4caf.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    [at file. It's possible that the missing plugin is loaded by a preset]
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)]
+    [at resolve (node:internal/modules/helpers:157:19)]
+    [at tryRequireResolve (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:93868)]
+    [at resolveStandardizedNameForRequire (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94220)]
+    [at resolveStandardizedName (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94678)]
+    [at loadPlugin (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:91953)]
+    [at <anonymous>]
+    [at createDescriptor (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75929)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40260]
+    [at <anonymous>]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40252)]
+    [at Function.all (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at createDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75384)]
+    [at <anonymous>]
+    [at createPluginDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75287)]
+    [at <anonymous>]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:74768]
+    [at <anonymous>]
+    [at Function.<anonymous> (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135323)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135948)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42220)]
+    [at onFirstPause (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at cachedFunction (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:59444)]
+    [at <anonymous>]
+    [at mergeChainOpts (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70745)]
+    [at <anonymous>]
+    [at chainWalker (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70019)]
+    [at <anonymous>]
+    [at buildRootChain (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:64515)]
+    [at <anonymous>]
+    [at loadPrivatePartialConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:110517)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:96989)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106637)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:133753)]
+    [at loadOptionsSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106876)]
+    [at loadOptions (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:107065)]
+    [at getFreshConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+
+
+./app/dashboard/logistics/page.tsx
+Error evaluating Node.js code
+Error: Cannot find module 'babel-plugin-react-compiler'
+Require stack:
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/traverse.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/transform.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/index.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/tx/tradexpress-app/.next/build/chunks/[root-of-the-server]__0x8m--0._.js
+- /home/tx/tradexpress-app/.next/build/chunks/[turbopack]_runtime.js
+- /home/tx/tradexpress-app/.next/build/cf208e1b0e4c4caf.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    [at file. It's possible that the missing plugin is loaded by a preset]
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)]
+    [at resolve (node:internal/modules/helpers:157:19)]
+    [at tryRequireResolve (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:93868)]
+    [at resolveStandardizedNameForRequire (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94220)]
+    [at resolveStandardizedName (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94678)]
+    [at loadPlugin (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:91953)]
+    [at <anonymous>]
+    [at createDescriptor (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75929)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40260]
+    [at <anonymous>]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40252)]
+    [at Function.all (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at createDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75384)]
+    [at <anonymous>]
+    [at createPluginDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75287)]
+    [at <anonymous>]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:74768]
+    [at <anonymous>]
+    [at Function.<anonymous> (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135323)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135948)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42220)]
+    [at onFirstPause (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at cachedFunction (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:59444)]
+    [at <anonymous>]
+    [at mergeChainOpts (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70745)]
+    [at <anonymous>]
+    [at chainWalker (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70019)]
+    [at <anonymous>]
+    [at buildRootChain (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:64515)]
+    [at <anonymous>]
+    [at loadPrivatePartialConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:110517)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:96989)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106637)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:133753)]
+    [at loadOptionsSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106876)]
+    [at loadOptions (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:107065)]
+    [at getFreshConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+
+
+./app/dashboard/onboarding/page.tsx
+Error evaluating Node.js code
+Error: Cannot find module 'babel-plugin-react-compiler'
+Require stack:
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/traverse.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/transform.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/index.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/tx/tradexpress-app/.next/build/chunks/[root-of-the-server]__0x8m--0._.js
+- /home/tx/tradexpress-app/.next/build/chunks/[turbopack]_runtime.js
+- /home/tx/tradexpress-app/.next/build/cf208e1b0e4c4caf.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    [at file. It's possible that the missing plugin is loaded by a preset]
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)]
+    [at resolve (node:internal/modules/helpers:157:19)]
+    [at tryRequireResolve (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:93868)]
+    [at resolveStandardizedNameForRequire (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94220)]
+    [at resolveStandardizedName (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94678)]
+    [at loadPlugin (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:91953)]
+    [at <anonymous>]
+    [at createDescriptor (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75929)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40260]
+    [at <anonymous>]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40252)]
+    [at Function.all (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at createDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75384)]
+    [at <anonymous>]
+    [at createPluginDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75287)]
+    [at <anonymous>]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:74768]
+    [at <anonymous>]
+    [at Function.<anonymous> (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135323)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135948)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42220)]
+    [at onFirstPause (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at cachedFunction (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:59444)]
+    [at <anonymous>]
+    [at mergeChainOpts (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70745)]
+    [at <anonymous>]
+    [at chainWalker (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70019)]
+    [at <anonymous>]
+    [at buildRootChain (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:64515)]
+    [at <anonymous>]
+    [at loadPrivatePartialConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:110517)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:96989)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106637)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:133753)]
+    [at loadOptionsSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106876)]
+    [at loadOptions (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:107065)]
+    [at getFreshConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+
+
+./app/dashboard/page.tsx
+Error evaluating Node.js code
+Error: Cannot find module 'babel-plugin-react-compiler'
+Require stack:
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/traverse.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/transform.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/index.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/tx/tradexpress-app/.next/build/chunks/[root-of-the-server]__0x8m--0._.js
+- /home/tx/tradexpress-app/.next/build/chunks/[turbopack]_runtime.js
+- /home/tx/tradexpress-app/.next/build/cf208e1b0e4c4caf.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    [at file. It's possible that the missing plugin is loaded by a preset]
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)]
+    [at resolve (node:internal/modules/helpers:157:19)]
+    [at tryRequireResolve (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:93868)]
+    [at resolveStandardizedNameForRequire (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94220)]
+    [at resolveStandardizedName (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94678)]
+    [at loadPlugin (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:91953)]
+    [at <anonymous>]
+    [at createDescriptor (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75929)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40260]
+    [at <anonymous>]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40252)]
+    [at Function.all (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at createDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75384)]
+    [at <anonymous>]
+    [at createPluginDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75287)]
+    [at <anonymous>]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:74768]
+    [at <anonymous>]
+    [at Function.<anonymous> (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135323)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135948)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42220)]
+    [at onFirstPause (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at cachedFunction (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:59444)]
+    [at <anonymous>]
+    [at mergeChainOpts (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70745)]
+    [at <anonymous>]
+    [at chainWalker (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70019)]
+    [at <anonymous>]
+    [at buildRootChain (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:64515)]
+    [at <anonymous>]
+    [at loadPrivatePartialConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:110517)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:96989)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106637)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:133753)]
+    [at loadOptionsSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106876)]
+    [at loadOptions (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:107065)]
+    [at getFreshConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+
+
+./app/dashboard/reports/page.tsx
+Error evaluating Node.js code
+Error: Cannot find module 'babel-plugin-react-compiler'
+Require stack:
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/traverse.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/transform.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/index.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/tx/tradexpress-app/.next/build/chunks/[root-of-the-server]__0x8m--0._.js
+- /home/tx/tradexpress-app/.next/build/chunks/[turbopack]_runtime.js
+- /home/tx/tradexpress-app/.next/build/cf208e1b0e4c4caf.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    [at file. It's possible that the missing plugin is loaded by a preset]
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)]
+    [at resolve (node:internal/modules/helpers:157:19)]
+    [at tryRequireResolve (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:93868)]
+    [at resolveStandardizedNameForRequire (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94220)]
+    [at resolveStandardizedName (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94678)]
+    [at loadPlugin (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:91953)]
+    [at <anonymous>]
+    [at createDescriptor (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75929)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40260]
+    [at <anonymous>]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40252)]
+    [at Function.all (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at createDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75384)]
+    [at <anonymous>]
+    [at createPluginDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75287)]
+    [at <anonymous>]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:74768]
+    [at <anonymous>]
+    [at Function.<anonymous> (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135323)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135948)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42220)]
+    [at onFirstPause (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at cachedFunction (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:59444)]
+    [at <anonymous>]
+    [at mergeChainOpts (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70745)]
+    [at <anonymous>]
+    [at chainWalker (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70019)]
+    [at <anonymous>]
+    [at buildRootChain (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:64515)]
+    [at <anonymous>]
+    [at loadPrivatePartialConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:110517)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:96989)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106637)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:133753)]
+    [at loadOptionsSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106876)]
+    [at loadOptions (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:107065)]
+    [at getFreshConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+
+
+./app/dashboard/settings/page.tsx
+Error evaluating Node.js code
+Error: Cannot find module 'babel-plugin-react-compiler'
+Require stack:
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/traverse.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/transform.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/index.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/tx/tradexpress-app/.next/build/chunks/[root-of-the-server]__0x8m--0._.js
+- /home/tx/tradexpress-app/.next/build/chunks/[turbopack]_runtime.js
+- /home/tx/tradexpress-app/.next/build/cf208e1b0e4c4caf.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    [at file. It's possible that the missing plugin is loaded by a preset]
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)]
+    [at resolve (node:internal/modules/helpers:157:19)]
+    [at tryRequireResolve (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:93868)]
+    [at resolveStandardizedNameForRequire (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94220)]
+    [at resolveStandardizedName (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94678)]
+    [at loadPlugin (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:91953)]
+    [at <anonymous>]
+    [at createDescriptor (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75929)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40260]
+    [at <anonymous>]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40252)]
+    [at Function.all (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at createDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75384)]
+    [at <anonymous>]
+    [at createPluginDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75287)]
+    [at <anonymous>]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:74768]
+    [at <anonymous>]
+    [at Function.<anonymous> (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135323)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135948)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42220)]
+    [at onFirstPause (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at cachedFunction (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:59444)]
+    [at <anonymous>]
+    [at mergeChainOpts (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70745)]
+    [at <anonymous>]
+    [at chainWalker (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70019)]
+    [at <anonymous>]
+    [at buildRootChain (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:64515)]
+    [at <anonymous>]
+    [at loadPrivatePartialConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:110517)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:96989)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106637)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:133753)]
+    [at loadOptionsSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106876)]
+    [at loadOptions (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:107065)]
+    [at getFreshConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+
+
+./app/dashboard/technology/infrastructure/page.tsx
+Error evaluating Node.js code
+Error: Cannot find module 'babel-plugin-react-compiler'
+Require stack:
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/traverse.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/transform.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/index.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/tx/tradexpress-app/.next/build/chunks/[root-of-the-server]__0x8m--0._.js
+- /home/tx/tradexpress-app/.next/build/chunks/[turbopack]_runtime.js
+- /home/tx/tradexpress-app/.next/build/cf208e1b0e4c4caf.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    [at file. It's possible that the missing plugin is loaded by a preset]
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)]
+    [at resolve (node:internal/modules/helpers:157:19)]
+    [at tryRequireResolve (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:93868)]
+    [at resolveStandardizedNameForRequire (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94220)]
+    [at resolveStandardizedName (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94678)]
+    [at loadPlugin (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:91953)]
+    [at <anonymous>]
+    [at createDescriptor (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75929)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40260]
+    [at <anonymous>]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40252)]
+    [at Function.all (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at createDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75384)]
+    [at <anonymous>]
+    [at createPluginDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75287)]
+    [at <anonymous>]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:74768]
+    [at <anonymous>]
+    [at Function.<anonymous> (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135323)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135948)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42220)]
+    [at onFirstPause (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at cachedFunction (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:59444)]
+    [at <anonymous>]
+    [at mergeChainOpts (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70745)]
+    [at <anonymous>]
+    [at chainWalker (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70019)]
+    [at <anonymous>]
+    [at buildRootChain (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:64515)]
+    [at <anonymous>]
+    [at loadPrivatePartialConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:110517)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:96989)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106637)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:133753)]
+    [at loadOptionsSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106876)]
+    [at loadOptions (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:107065)]
+    [at getFreshConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+
+
+./app/dashboard/technology/page.tsx
+Error evaluating Node.js code
+Error: Cannot find module 'babel-plugin-react-compiler'
+Require stack:
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/traverse.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/transform.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/index.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/tx/tradexpress-app/.next/build/chunks/[root-of-the-server]__0x8m--0._.js
+- /home/tx/tradexpress-app/.next/build/chunks/[turbopack]_runtime.js
+- /home/tx/tradexpress-app/.next/build/cf208e1b0e4c4caf.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    [at file. It's possible that the missing plugin is loaded by a preset]
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)]
+    [at resolve (node:internal/modules/helpers:157:19)]
+    [at tryRequireResolve (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:93868)]
+    [at resolveStandardizedNameForRequire (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94220)]
+    [at resolveStandardizedName (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94678)]
+    [at loadPlugin (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:91953)]
+    [at <anonymous>]
+    [at createDescriptor (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75929)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40260]
+    [at <anonymous>]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40252)]
+    [at Function.all (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at createDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75384)]
+    [at <anonymous>]
+    [at createPluginDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75287)]
+    [at <anonymous>]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:74768]
+    [at <anonymous>]
+    [at Function.<anonymous> (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135323)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135948)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42220)]
+    [at onFirstPause (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at cachedFunction (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:59444)]
+    [at <anonymous>]
+    [at mergeChainOpts (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70745)]
+    [at <anonymous>]
+    [at chainWalker (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70019)]
+    [at <anonymous>]
+    [at buildRootChain (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:64515)]
+    [at <anonymous>]
+    [at loadPrivatePartialConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:110517)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:96989)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106637)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:133753)]
+    [at loadOptionsSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106876)]
+    [at loadOptions (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:107065)]
+    [at getFreshConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+
+
+./app/hscode/page.tsx
+Error evaluating Node.js code
+Error: Cannot find module 'babel-plugin-react-compiler'
+Require stack:
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/traverse.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/transform.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/index.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/tx/tradexpress-app/.next/build/chunks/[root-of-the-server]__0x8m--0._.js
+- /home/tx/tradexpress-app/.next/build/chunks/[turbopack]_runtime.js
+- /home/tx/tradexpress-app/.next/build/cf208e1b0e4c4caf.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    [at file. It's possible that the missing plugin is loaded by a preset]
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)]
+    [at resolve (node:internal/modules/helpers:157:19)]
+    [at tryRequireResolve (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:93868)]
+    [at resolveStandardizedNameForRequire (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94220)]
+    [at resolveStandardizedName (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94678)]
+    [at loadPlugin (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:91953)]
+    [at <anonymous>]
+    [at createDescriptor (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75929)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40260]
+    [at <anonymous>]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40252)]
+    [at Function.all (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at createDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75384)]
+    [at <anonymous>]
+    [at createPluginDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75287)]
+    [at <anonymous>]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:74768]
+    [at <anonymous>]
+    [at Function.<anonymous> (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135323)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135948)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42220)]
+    [at onFirstPause (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at cachedFunction (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:59444)]
+    [at <anonymous>]
+    [at mergeChainOpts (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70745)]
+    [at <anonymous>]
+    [at chainWalker (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70019)]
+    [at <anonymous>]
+    [at buildRootChain (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:64515)]
+    [at <anonymous>]
+    [at loadPrivatePartialConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:110517)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:96989)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106637)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:133753)]
+    [at loadOptionsSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106876)]
+    [at loadOptions (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:107065)]
+    [at getFreshConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+
+
+./app/knowledge/page.tsx
+Error evaluating Node.js code
+Error: Cannot find module 'babel-plugin-react-compiler'
+Require stack:
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/traverse.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/transform.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/index.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/tx/tradexpress-app/.next/build/chunks/[root-of-the-server]__0x8m--0._.js
+- /home/tx/tradexpress-app/.next/build/chunks/[turbopack]_runtime.js
+- /home/tx/tradexpress-app/.next/build/cf208e1b0e4c4caf.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    [at file. It's possible that the missing plugin is loaded by a preset]
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)]
+    [at resolve (node:internal/modules/helpers:157:19)]
+    [at tryRequireResolve (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:93868)]
+    [at resolveStandardizedNameForRequire (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94220)]
+    [at resolveStandardizedName (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94678)]
+    [at loadPlugin (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:91953)]
+    [at <anonymous>]
+    [at createDescriptor (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75929)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40260]
+    [at <anonymous>]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40252)]
+    [at Function.all (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at createDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75384)]
+    [at <anonymous>]
+    [at createPluginDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75287)]
+    [at <anonymous>]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:74768]
+    [at <anonymous>]
+    [at Function.<anonymous> (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135323)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135948)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42220)]
+    [at onFirstPause (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at cachedFunction (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:59444)]
+    [at <anonymous>]
+    [at mergeChainOpts (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70745)]
+    [at <anonymous>]
+    [at chainWalker (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70019)]
+    [at <anonymous>]
+    [at buildRootChain (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:64515)]
+    [at <anonymous>]
+    [at loadPrivatePartialConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:110517)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:96989)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106637)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:133753)]
+    [at loadOptionsSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106876)]
+    [at loadOptions (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:107065)]
+    [at getFreshConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+
+
+./app/layout.tsx
+Error evaluating Node.js code
+Error: Cannot find module 'babel-plugin-react-compiler'
+Require stack:
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/traverse.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/transform.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/index.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/tx/tradexpress-app/.next/build/chunks/[root-of-the-server]__0x8m--0._.js
+- /home/tx/tradexpress-app/.next/build/chunks/[turbopack]_runtime.js
+- /home/tx/tradexpress-app/.next/build/cf208e1b0e4c4caf.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    [at file. It's possible that the missing plugin is loaded by a preset]
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)]
+    [at resolve (node:internal/modules/helpers:157:19)]
+    [at tryRequireResolve (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:93868)]
+    [at resolveStandardizedNameForRequire (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94220)]
+    [at resolveStandardizedName (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94678)]
+    [at loadPlugin (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:91953)]
+    [at <anonymous>]
+    [at createDescriptor (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75929)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40260]
+    [at <anonymous>]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40252)]
+    [at Function.all (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at createDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75384)]
+    [at <anonymous>]
+    [at createPluginDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75287)]
+    [at <anonymous>]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:74768]
+    [at <anonymous>]
+    [at Function.<anonymous> (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135323)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135948)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42220)]
+    [at onFirstPause (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at cachedFunction (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:59444)]
+    [at <anonymous>]
+    [at mergeChainOpts (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70745)]
+    [at <anonymous>]
+    [at chainWalker (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70019)]
+    [at <anonymous>]
+    [at buildRootChain (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:64515)]
+    [at <anonymous>]
+    [at loadPrivatePartialConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:110517)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:96989)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106637)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:133753)]
+    [at loadOptionsSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106876)]
+    [at loadOptions (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:107065)]
+    [at getFreshConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+
+
+./app/login/page.tsx
+Error evaluating Node.js code
+Error: Cannot find module 'babel-plugin-react-compiler'
+Require stack:
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/traverse.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/transform.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/index.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/tx/tradexpress-app/.next/build/chunks/[root-of-the-server]__0x8m--0._.js
+- /home/tx/tradexpress-app/.next/build/chunks/[turbopack]_runtime.js
+- /home/tx/tradexpress-app/.next/build/cf208e1b0e4c4caf.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    [at file. It's possible that the missing plugin is loaded by a preset]
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)]
+    [at resolve (node:internal/modules/helpers:157:19)]
+    [at tryRequireResolve (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:93868)]
+    [at resolveStandardizedNameForRequire (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94220)]
+    [at resolveStandardizedName (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94678)]
+    [at loadPlugin (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:91953)]
+    [at <anonymous>]
+    [at createDescriptor (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75929)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40260]
+    [at <anonymous>]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40252)]
+    [at Function.all (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at createDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75384)]
+    [at <anonymous>]
+    [at createPluginDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75287)]
+    [at <anonymous>]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:74768]
+    [at <anonymous>]
+    [at Function.<anonymous> (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135323)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135948)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42220)]
+    [at onFirstPause (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at cachedFunction (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:59444)]
+    [at <anonymous>]
+    [at mergeChainOpts (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70745)]
+    [at <anonymous>]
+    [at chainWalker (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70019)]
+    [at <anonymous>]
+    [at buildRootChain (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:64515)]
+    [at <anonymous>]
+    [at loadPrivatePartialConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:110517)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:96989)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106637)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:133753)]
+    [at loadOptionsSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106876)]
+    [at loadOptions (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:107065)]
+    [at getFreshConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+
+
+./app/page.tsx
+Error evaluating Node.js code
+Error: Cannot find module 'babel-plugin-react-compiler'
+Require stack:
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/traverse.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/transform.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/index.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/tx/tradexpress-app/.next/build/chunks/[root-of-the-server]__0x8m--0._.js
+- /home/tx/tradexpress-app/.next/build/chunks/[turbopack]_runtime.js
+- /home/tx/tradexpress-app/.next/build/cf208e1b0e4c4caf.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    [at file. It's possible that the missing plugin is loaded by a preset]
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)]
+    [at resolve (node:internal/modules/helpers:157:19)]
+    [at tryRequireResolve (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:93868)]
+    [at resolveStandardizedNameForRequire (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94220)]
+    [at resolveStandardizedName (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94678)]
+    [at loadPlugin (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:91953)]
+    [at <anonymous>]
+    [at createDescriptor (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75929)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40260]
+    [at <anonymous>]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40252)]
+    [at Function.all (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at createDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75384)]
+    [at <anonymous>]
+    [at createPluginDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75287)]
+    [at <anonymous>]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:74768]
+    [at <anonymous>]
+    [at Function.<anonymous> (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135323)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135948)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42220)]
+    [at onFirstPause (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at cachedFunction (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:59444)]
+    [at <anonymous>]
+    [at mergeChainOpts (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70745)]
+    [at <anonymous>]
+    [at chainWalker (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70019)]
+    [at <anonymous>]
+    [at buildRootChain (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:64515)]
+    [at <anonymous>]
+    [at loadPrivatePartialConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:110517)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:96989)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106637)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:133753)]
+    [at loadOptionsSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106876)]
+    [at loadOptions (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:107065)]
+    [at getFreshConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+
+
+./app/register/page.tsx
+Error evaluating Node.js code
+Error: Cannot find module 'babel-plugin-react-compiler'
+Require stack:
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/traverse.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/transform.js
+- /home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/index.js
+- /home/tx/tradexpress-app/node_modules/next/dist/compiled/loader-runner/LoaderRunner.js
+- /home/tx/tradexpress-app/.next/build/chunks/[root-of-the-server]__0x8m--0._.js
+- /home/tx/tradexpress-app/.next/build/chunks/[turbopack]_runtime.js
+- /home/tx/tradexpress-app/.next/build/cf208e1b0e4c4caf.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    [at file. It's possible that the missing plugin is loaded by a preset]
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)]
+    [at resolve (node:internal/modules/helpers:157:19)]
+    [at tryRequireResolve (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:93868)]
+    [at resolveStandardizedNameForRequire (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94220)]
+    [at resolveStandardizedName (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:94678)]
+    [at loadPlugin (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:91953)]
+    [at <anonymous>]
+    [at createDescriptor (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75929)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40260]
+    [at <anonymous>]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40252)]
+    [at Function.all (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at createDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75384)]
+    [at <anonymous>]
+    [at createPluginDescriptors (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:75287)]
+    [at <anonymous>]
+    [at /home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:74768]
+    [at <anonymous>]
+    [at Function.<anonymous> (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135323)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at Function.sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:135948)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42220)]
+    [at onFirstPause (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42632)]
+    [at <anonymous>]
+    [at cachedFunction (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:59444)]
+    [at <anonymous>]
+    [at mergeChainOpts (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70745)]
+    [at <anonymous>]
+    [at chainWalker (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:70019)]
+    [at <anonymous>]
+    [at buildRootChain (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:64515)]
+    [at <anonymous>]
+    [at loadPrivatePartialConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:110517)]
+    [at <anonymous>]
+    [at loadFullConfig (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:96989)]
+    [at <anonymous>]
+    [at loadOptionsImpl (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106637)]
+    [at <anonymous>]
+    [at evaluateSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:42887)]
+    [at sync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:40903)]
+    [at stopHiding - secret - don't use this - v1 (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:133753)]
+    [at loadOptionsSync (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:106876)]
+    [at loadOptions (/home/tx/tradexpress-app/node_modules/next/dist/compiled/babel/bundle.js:1:107065)]
+    [at getFreshConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:367:49)]
+    [at getConfig (/home/tx/tradexpress-app/node_modules/next/dist/build/babel/loader/get-config.js:424:31)]
+
+
+    at <unknown> (file. It's possible that the missing plugin is loaded by a preset)
+    ... collapsed 26 duplicate lines matching above 1 lines 26 times...

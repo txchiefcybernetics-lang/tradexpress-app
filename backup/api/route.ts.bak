@@ -1,0 +1,40 @@
+import { NextResponse } from "next/server";
+
+export async function POST(req: Request) {
+  try {
+    const { message } = await req.json();
+
+    const response = await fetch("http://127.0.0.1:11434/api/generate", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        model: "llama3.2",
+        prompt: message,
+        stream: false,
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error(`Ollama returned ${response.status}`);
+    }
+
+    const data = await response.json();
+
+    return NextResponse.json({
+      reply: data.response,
+      provider: "TradeXpress AI",
+    });
+  } catch (error) {
+    console.error("Chat API Error:", error);
+
+    return NextResponse.json(
+      {
+        reply: "❌ Unable to connect to AI.",
+        provider: "System",
+      },
+      { status: 500 }
+    );
+  }
+}

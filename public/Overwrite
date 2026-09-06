@@ -1,0 +1,19 @@
+[TAILING] Tailing last 15 lines for [tradexpress] process (change the value with --lines option)
+/home/tx/.pm2/logs/tradexpress-error.log last 15 lines:
+/home/tx/.pm2/logs/tradexpress-out.log last 15 lines:
+0|tradexpr |   },
+0|tradexpr |   timestamp: '2026-08-07T22:41:10.404Z'
+0|tradexpr | }
+0|tradexpr | {
+0|tradexpr |   prefix: 'TX ROUTE AUDIT',
+0|tradexpr |   path: '/nice%20ports%2C/Tri%6Eity.txt%2ebak',
+0|tradexpr |   method: 'GET',
+0|tradexpr |   client: {
+0|tradexpr |     userAgent: 'unknown',
+0|tradexpr |     platform: 'TradeXpress Enterprise',
+0|tradexpr |     domain: 'tradexpress.co',
+0|tradexpr |     ip: '::ffff:192.168.1.141'
+0|tradexpr |   },
+0|tradexpr |   timestamp: '2026-08-07T22:41:10.423Z'
+0|tradexpr | }
+

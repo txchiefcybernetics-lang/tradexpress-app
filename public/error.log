@@ -1,0 +1,63 @@
+
+> tradexpress-app@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.10 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.141:3000
+- Environments: .env.local
+✓ Ready in 515ms
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /home/tx/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /home/tx/tradexpress-app/package-lock.json
+
+
+⨯ ./tradexpress-app/app/page.tsx:31:3
+Unexpected token `}`. Expected jsx identifier
+  [90m29 |[0m }}
+  [90m30 |[0m
+[31m[1m>[0m [90m31 |[0m   }}
+  [90m   |[0m   [31m[1m^[0m
+  [90m32 |[0m
+
+Parsing ecmascript source code failed
+
+
+ GET / 500 in 270ms (next.js: 114ms, application-code: 156ms)
+⨯ ./tradexpress-app/app/page.tsx:31:3
+Unexpected token `}`. Expected jsx identifier
+  [90m29 |[0m }}
+  [90m30 |[0m
+[31m[1m>[0m [90m31 |[0m   }}
+  [90m   |[0m   [31m[1m^[0m
+  [90m32 |[0m
+
+Parsing ecmascript source code failed
+
+
+ GET / 500 in 19ms (next.js: 9ms, application-code: 10ms)
+⚠ Blocked cross-origin request to Next.js dev resource /_next/webpack-hmr from "192.168.1.141".
+Cross-origin access to Next.js dev resources is blocked by default for safety.
+
+To allow this host in development, add it to "allowedDevOrigins" in next.config.js and restart the dev server:
+
+// next.config.js
+module.exports = {
+  allowedDevOrigins: ['192.168.1.141'],
+}
+
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+⚠ Blocked cross-origin request to Next.js dev resource /__nextjs_original-stack-frames from "192.168.1.141".
+Cross-origin access to Next.js dev resources is blocked by default for safety.
+
+To allow this host in development, add it to "allowedDevOrigins" in next.config.js and restart the dev server:
+
+// next.config.js
+module.exports = {
+  allowedDevOrigins: ['192.168.1.141'],
+}
+
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins

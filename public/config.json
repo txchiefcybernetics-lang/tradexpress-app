@@ -1,0 +1,8 @@
+{
+  "environment": "production",
+  "branch": "master",
+  "debugger": true,
+  "app_name": "TradeXpress",
+  "owner": "hello@tradexpress.co",
+  "updated_at": "2026-08-27T17:55:00Z"
+}

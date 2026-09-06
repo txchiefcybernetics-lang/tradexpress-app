@@ -1,0 +1,211 @@
+"use client";
+
+import { useState } from "react";
+
+type Message = {
+  id: number;
+  role: "assistant" | "user";
+  text: string;
+};
+
+export default function TradeXpress() {
+  const [messages, setMessages] = useState<Message[]>([
+    {
+      id: 1,
+      role: "assistant",
+      text: "Hello! 🇵🇭 TradeXpress REAL AI connected! Ask me about HS Codes, customs, freight, import/export, logistics, or tariffs.",
+    },
+  ]);
+
+  const [input, setInput] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  async function sendMessage() {
+    if (!input.trim() || loading) return;
+
+    const userMessage = input;
+
+    setMessages((prev) => [
+      ...prev,
+      {
+        id: Date.now(),
+        role: "user",
+        text: userMessage,
+      },
+    ]);
+
+    setInput("");
+    setLoading(true);
+
+    try {
+      const res = await fetch("/api/chat", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          message: userMessage,
+        }),
+      });
+
+      const data = await res.json();
+
+      setMessages((prev) => [
+        ...prev,
+        {
+          id: Date.now() + 1,
+          role: "assistant",
+          text: data.reply || "No response.",
+        },
+      ]);
+    } catch (err) {
+      setMessages((prev) => [
+        ...prev,
+        {
+          id: Date.now() + 1,
+          role: "assistant",
+          text: "❌ Unable to connect to AI.",
+        },
+      ]);
+    }
+
+    setLoading(false);
+  }
+
+  return (
+    <div
+      style={{
+        background: "#eef3ff",
+        minHeight: "100vh",
+        padding: 30,
+      }}
+    >
+      <div
+        style={{
+          maxWidth: 900,
+          margin: "0 auto",
+          background: "#fff",
+          borderRadius: 18,
+          overflow: "hidden",
+          boxShadow: "0 10px 30px rgba(0,0,0,.15)",
+        }}
+      >
+        <div
+          style={{
+            background: "#2563eb",
+            color: "white",
+            padding: 24,
+          }}
+        >
+          <h1
+            style={{
+              margin: 0,
+              fontSize: 34,
+            }}
+          >
+            🤖 TradeXpress REAL AI
+          </h1>
+
+          <p
+            style={{
+              marginTop: 8,
+              opacity: 0.9,
+            }}
+          >
+            Connected to AI
+          </p>
+        </div>
+
+        <div
+          style={{
+            height: 500,
+            overflowY: "auto",
+            padding: 20,
+            background: "#f9fafb",
+          }}
+        >
+          {messages.map((m) => (
+            <div
+              key={m.id}
+              style={{
+                display: "flex",
+                justifyContent:
+                  m.role === "user" ? "flex-end" : "flex-start",
+                marginBottom: 15,
+              }}
+            >
+              <div
+                style={{
+                  maxWidth: "75%",
+                  padding: "14px 18px",
+                  borderRadius: 16,
+                  background:
+                    m.role === "user" ? "#2563eb" : "white",
+                  color:
+                    m.role === "user" ? "white" : "#111",
+                  border:
+                    m.role === "assistant"
+                      ? "1px solid #ddd"
+                      : "none",
+                  whiteSpace: "pre-wrap",
+                  fontSize: 15,
+                  lineHeight: 1.5,
+                }}
+              >
+                {m.text}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div
+          style={{
+            padding: 20,
+            borderTop: "1px solid #e5e7eb",
+            display: "flex",
+            gap: 12,
+          }}
+        >
+          <input
+            value={input}
+            disabled={loading}
+            placeholder="Ask HS Code, customs, logistics..."
+            onChange={(e) => setInput(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                sendMessage();
+              }
+            }}
+            style={{
+              flex: 1,
+              padding: "14px",
+              fontSize: 16,
+              borderRadius: 10,
+              border: "1px solid #ccc",
+              outline: "none",
+              color: "#111",
+              background: "white",
+            }}
+          />
+
+          <button
+            onClick={sendMessage}
+            disabled={loading}
+            style={{
+              background: "#2563eb",
+              color: "white",
+              border: "none",
+              borderRadius: 10,
+              padding: "0 28px",
+              fontSize: 16,
+              fontWeight: "bold",
+              cursor: "pointer",
+            }}
+          >
+            {loading ? "..." : "Send"}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}

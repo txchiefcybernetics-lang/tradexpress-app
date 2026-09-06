@@ -1,0 +1,39 @@
+    } else {
+      // 2. Try OpenRouter AI API if key is present
+      const apiKey = process.env.OPENAI_API_KEY;
+      if (apiKey && !apiKey.includes('your_actual_key')) {
+        try {
+          const aiRes = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+            method: 'POST',
+            headers: {
+              'Authorization': `Bearer ${apiKey}`,
+              'Content-Type': 'application/json',
+              'HTTP-Referer': process.env.OPENROUTER_SITE_URL || 'http://localhost:3000',
+              'X-Title': process.env.OPENROUTER_APP_NAME || 'TradeXpress AI'
+            },
+            body: JSON.stringify({
+              model: 'openai/gpt-4o-mini',
+              messages: [{ role: 'user', content: message }]
+            })
+          });
+          const aiData = await aiRes.json();
+          if (aiData.choices && aiData.choices[0]) {
+            toolOutput = aiData.choices[0].message.content;
+          }
+        } catch (err) {
+          console.error('OpenRouter API error, using fallback.');
+        }
+      }
+
+      // 3. Fallback General Response if AI is unconfigured
+      if (!toolOutput) {
+        toolOutput = `TradeXpress Enterprise AI received: "${message}". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].`;
+      }
+    }
+
+    await logInteraction(message, toolOutput);
+    return NextResponse.json({ reply: toolOutput });
+  } catch (error) {
+    return NextResponse.json({ reply: "Server processing error." }, { status: 500 });
+  }
+}

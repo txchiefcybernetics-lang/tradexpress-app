@@ -1,0 +1,302 @@
+[
+  {
+    "id": "0iqeb1s",
+    "user_message": "HS CODE GENERATOR",
+    "bot_reply": "[HS CODE RESULT]\n• Product: GENERATOR\n• HS Code: 8471.30.00\n• Est. Duty: 0%",
+    "created_at": "2026-08-21T22:51:59.422Z"
+  },
+  {
+    "id": "6yjwri4",
+    "user_message": "hs code electronics",
+    "bot_reply": "[HS CODE RESULT]\n• Product: electronics\n• HS Code: 8471.30.00\n• Est. Duty: 0%",
+    "created_at": "2026-08-21T22:51:36.051Z"
+  },
+  {
+    "id": "o952se1",
+    "user_message": "hs code solar panels",
+    "bot_reply": "[HS CODE RESULT]\n• Product: solar panels\n• HS Code: 8471.30.00\n• Est. Duty: 0%",
+    "created_at": "2026-08-21T22:51:25.069Z"
+  },
+  {
+    "id": "0fgeufw",
+    "user_message": "hs code shrimp",
+    "bot_reply": "[HS CODE RESULT]\n• Product: shrimp\n• HS Code: 8471.30.00\n• Est. Duty: 0%",
+    "created_at": "2026-08-21T22:51:11.211Z"
+  },
+  {
+    "id": "5wzj8gc",
+    "user_message": "hs code shrimp",
+    "bot_reply": "[HS CODE RESULT]\n• Product: shrimp\n• HS Code: 8471.30.00\n• Est. Duty: 0%",
+    "created_at": "2026-08-21T22:49:07.095Z"
+  },
+  {
+    "id": "e09wqq2",
+    "user_message": "hs code shrimp",
+    "bot_reply": "[HS CODE RESULT]\n• Product: shrimp\n• HS Code: 8471.30.00\n• Est. Duty: 0%",
+    "created_at": "2026-08-21T22:46:54.937Z"
+  },
+  {
+    "id": "9kcn0e4",
+    "user_message": "hs code solar panels",
+    "bot_reply": "[HS CODE RESULT]\n• Product: solar panels\n• HS Code: 8471.30.00\n• Est. Duty: 0%",
+    "created_at": "2026-08-21T22:46:34.131Z"
+  },
+  {
+    "id": "3bfap08",
+    "user_message": "hs code solar panels",
+    "bot_reply": "[HS CODE RESULT]\n• Product: solar panels\n• HS Code: 8471.30.00\n• Est. Duty: 0%",
+    "created_at": "2026-08-21T22:43:26.934Z"
+  },
+  {
+    "id": "zs22gpz",
+    "user_message": "hs code electric vehicle",
+    "bot_reply": "[HS CODE RESULT]\n• Product: electric vehicle\n• HS Code: 8471.30.00\n• Est. Duty: 0%",
+    "created_at": "2026-08-21T22:41:11.211Z"
+  },
+  {
+    "id": "7h2lrcn",
+    "user_message": "hs code solar panels",
+    "bot_reply": "[HS CODE RESULT]\n• Product: solar panels\n• HS Code: 8471.30.00\n• Est. Duty: 0%",
+    "created_at": "2026-08-21T22:40:58.375Z"
+  },
+  {
+    "id": "spvq4xu",
+    "user_message": "hs code dashboard",
+    "bot_reply": "[HS CODE RESULT]\n• Product: dashboard\n• HS Code: 8471.30.00\n• Est. Duty: 0%",
+    "created_at": "2026-08-21T22:35:28.569Z"
+  },
+  {
+    "id": "300y4fr",
+    "user_message": "hs code, calc",
+    "bot_reply": "[HS CODE RESULT]\n• Product: , calc\n• HS Code: 8471.30.00\n• Est. Duty: 0%",
+    "created_at": "2026-08-21T22:30:15.786Z"
+  },
+  {
+    "id": "3ppwynd",
+    "user_message": "customs duty lookup",
+    "bot_reply": "TradeXpress Enterprise AI received: \"customs duty lookup\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T22:29:19.084Z"
+  },
+  {
+    "id": "3dsqc7g",
+    "user_message": "calc 1500*1.15",
+    "bot_reply": "Calculation Result: 1725.00",
+    "created_at": "2026-08-21T22:27:54.328Z"
+  },
+  {
+    "id": "i31loef",
+    "user_message": "g",
+    "bot_reply": "TradeXpress Enterprise AI received: \"g\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T21:57:00.112Z"
+  },
+  {
+    "id": "e3tdyjc",
+    "user_message": "hello",
+    "bot_reply": "TradeXpress Enterprise AI received: \"hello\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T21:54:56.065Z"
+  },
+  {
+    "id": "s2jzphe",
+    "user_message": "hs code repo",
+    "bot_reply": "[HS CODE RESULT]\n• Product: repo\n• HS Code: 8471.30.00\n• Est. Duty: 0%",
+    "created_at": "2026-08-21T19:00:21.041Z"
+  },
+  {
+    "id": "z953jd8",
+    "user_message": "repository-repo",
+    "bot_reply": "TradeXpress Enterprise AI received: \"repository-repo\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T19:00:11.213Z"
+  },
+  {
+    "id": "zogz30w",
+    "user_message": "workspace_tx_privatekey",
+    "bot_reply": "TradeXpress Enterprise AI received: \"workspace_tx_privatekey\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T18:55:29.149Z"
+  },
+  {
+    "id": "z5sptr4",
+    "user_message": "hey",
+    "bot_reply": "TradeXpress Enterprise AI received: \"hey\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T18:55:07.602Z"
+  },
+  {
+    "id": "o0pbdlj",
+    "user_message": "hi",
+    "bot_reply": "TradeXpress Enterprise AI received: \"hi\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T18:47:56.296Z"
+  },
+  {
+    "id": "jyxf0py",
+    "user_message": "phi packages",
+    "bot_reply": "TradeXpress Enterprise AI received: \"phi packages\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T18:47:17.681Z"
+  },
+  {
+    "id": "70dfttl",
+    "user_message": "ai.tradexpress.co",
+    "bot_reply": "TradeXpress Enterprise AI received: \"ai.tradexpress.co\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T18:46:56.233Z"
+  },
+  {
+    "id": "1fevth5",
+    "user_message": "h",
+    "bot_reply": "TradeXpress Enterprise AI received: \"h\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T18:46:45.504Z"
+  },
+  {
+    "id": "ljz8yoi",
+    "user_message": "deployment key-tx",
+    "bot_reply": "TradeXpress Enterprise AI received: \"deployment key-tx\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T18:43:07.961Z"
+  },
+  {
+    "id": "s36lqgh",
+    "user_message": "message api key",
+    "bot_reply": "TradeXpress Enterprise AI received: \"message api key\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T18:42:56.062Z"
+  },
+  {
+    "id": "5olhjmc",
+    "user_message": "hscode -landing pages",
+    "bot_reply": "[HS CODE RESULT]\n• Product: -landing pages\n• HS Code: 8471.30.00\n• Est. Duty: 0%",
+    "created_at": "2026-08-21T18:40:58.040Z"
+  },
+  {
+    "id": "n1m354d",
+    "user_message": "give me hscode",
+    "bot_reply": "TradeXpress Enterprise AI received: \"give me hscode\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T18:40:41.847Z"
+  },
+  {
+    "id": "xgjpn5o",
+    "user_message": "TX Assistant  Connection error. Please check your network.",
+    "bot_reply": "TradeXpress Enterprise AI received: \"TX Assistant  Connection error. Please check your network.\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T18:40:32.916Z"
+  },
+  {
+    "id": "2mxxada",
+    "user_message": "hello",
+    "bot_reply": "TradeXpress Enterprise AI received: \"hello\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T18:37:52.059Z"
+  },
+  {
+    "id": "2l0fr89",
+    "user_message": "tx logs",
+    "bot_reply": "TradeXpress Enterprise AI received: \"tx logs\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T18:36:27.235Z"
+  },
+  {
+    "id": "r1rxryr",
+    "user_message": "vercel --prod",
+    "bot_reply": "TradeXpress Enterprise AI received: \"vercel --prod\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T18:36:13.797Z"
+  },
+  {
+    "id": "6na3o34",
+    "user_message": "hello",
+    "bot_reply": "TradeXpress Enterprise AI received: \"hello\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T18:35:41.615Z"
+  },
+  {
+    "id": "165p33q",
+    "user_message": "action?",
+    "bot_reply": "TradeXpress Enterprise AI received: \"action?\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T18:32:24.601Z"
+  },
+  {
+    "id": "mk04kro",
+    "user_message": "client?",
+    "bot_reply": "TradeXpress Enterprise AI received: \"client?\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T18:32:14.348Z"
+  },
+  {
+    "id": "wmaq6xs",
+    "user_message": "system_prompt",
+    "bot_reply": "TradeXpress Enterprise AI received: \"system_prompt\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T18:32:00.360Z"
+  },
+  {
+    "id": "h6za80r",
+    "user_message": "react expression",
+    "bot_reply": "TradeXpress Enterprise AI received: \"react expression\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T18:31:47.980Z"
+  },
+  {
+    "id": "xbtyo7q",
+    "user_message": ".message .content",
+    "bot_reply": "TradeXpress Enterprise AI received: \".message .content\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T18:31:12.229Z"
+  },
+  {
+    "id": "muo81zo",
+    "user_message": "@home",
+    "bot_reply": "TradeXpress Enterprise AI received: \"@home\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T18:31:02.192Z"
+  },
+  {
+    "id": "gxjhbds",
+    "user_message": "license.hs",
+    "bot_reply": "TradeXpress Enterprise AI received: \"license.hs\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T18:30:54.663Z"
+  },
+  {
+    "id": "jqf2uc3",
+    "user_message": "hscode node mail",
+    "bot_reply": "[HS CODE RESULT]\n• Product: node mail\n• HS Code: 8471.30.00\n• Est. Duty: 0%",
+    "created_at": "2026-08-21T18:30:38.352Z"
+  },
+  {
+    "id": "pzork6e",
+    "user_message": "hs code function",
+    "bot_reply": "[HS CODE RESULT]\n• Product: function\n• HS Code: 8471.30.00\n• Est. Duty: 0%",
+    "created_at": "2026-08-21T18:30:13.311Z"
+  },
+  {
+    "id": "6u6t1pq",
+    "user_message": "hs code runtime",
+    "bot_reply": "[HS CODE RESULT]\n• Product: runtime\n• HS Code: 8471.30.00\n• Est. Duty: 0%",
+    "created_at": "2026-08-21T18:29:59.464Z"
+  },
+  {
+    "id": "q42atzk",
+    "user_message": "hs code version",
+    "bot_reply": "[HS CODE RESULT]\n• Product: version\n• HS Code: 8471.30.00\n• Est. Duty: 0%",
+    "created_at": "2026-08-21T18:29:47.951Z"
+  },
+  {
+    "id": "eij5obi",
+    "user_message": "debug if true",
+    "bot_reply": "TradeXpress Enterprise AI received: \"debug if true\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T18:29:35.556Z"
+  },
+  {
+    "id": "awj4zai",
+    "user_message": "hi",
+    "bot_reply": "TradeXpress Enterprise AI received: \"hi\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T18:29:25.945Z"
+  },
+  {
+    "id": "afgus6o",
+    "user_message": "product_id",
+    "bot_reply": "TradeXpress Enterprise AI received: \"product_id\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T18:28:13.247Z"
+  },
+  {
+    "id": "04tofeg",
+    "user_message": "autoflow",
+    "bot_reply": "TradeXpress Enterprise AI received: \"autoflow\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T18:28:01.584Z"
+  },
+  {
+    "id": "jg8bqvn",
+    "user_message": "save topic on tradexpress.co/api/ap/ai/rel",
+    "bot_reply": "TradeXpress Enterprise AI received: \"save topic on tradexpress.co/api/ap/ai/rel\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T18:27:48.144Z"
+  },
+  {
+    "id": "f5dozxl",
+    "user_message": "help@tradexpress.co",
+    "bot_reply": "TradeXpress Enterprise AI received: \"help@tradexpress.co\". Configure OPENAI_API_KEY in .env.local for live LLM responses or use commands: hs code [item], calc [expr], code [topic].",
+    "created_at": "2026-08-21T18:27:21.744Z"
+  }
+]

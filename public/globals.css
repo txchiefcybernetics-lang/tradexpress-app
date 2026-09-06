@@ -1,0 +1,456 @@
+/* ==========================================================
+    TradeXpress Enterprise Design System
+    Version : 2.0
+    File    : app/globals.css
+   ========================================================== */
+
+/* ==========================================================
+    Theme Variables
+   ========================================================== */
+
+:root {
+
+  color-scheme: light dark;
+
+  /* Typography */
+
+  --tx-font:
+    Inter,
+    "Segoe UI Variable",
+    "Segoe UI",
+    system-ui,
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  /* RGB Values */
+
+  --tx-primary-rgb: 37 99 235;
+  --tx-secondary-rgb: 79 70 229;
+
+  --tx-success-rgb: 22 163 74;
+  --tx-warning-rgb: 245 158 11;
+  --tx-danger-rgb: 220 38 38;
+  --tx-info-rgb: 14 165 233;
+
+  /* Brand */
+
+  --tx-primary: rgb(var(--tx-primary-rgb));
+  --tx-secondary: rgb(var(--tx-secondary-rgb));
+
+  --tx-success: rgb(var(--tx-success-rgb));
+  --tx-warning: rgb(var(--tx-warning-rgb));
+  --tx-danger: rgb(var(--tx-danger-rgb));
+  --tx-info: rgb(var(--tx-info-rgb));
+
+  /* Surface */
+
+  --tx-background: #f8fafc;
+  --tx-surface: #ffffff;
+
+  --tx-text: #0f172a;
+  --tx-text-muted: #64748b;
+
+  --tx-border: #e2e8f0;
+
+  /* Layout */
+
+  --tx-radius:20px;
+
+  --tx-gap:1.5rem;
+
+  --tx-container:1800px;
+
+  /* Shadows */
+
+  --tx-shadow-sm:
+    0 2px 8px rgb(15 23 42 / .05);
+
+  --tx-shadow-md:
+    0 10px 30px rgb(15 23 42 / .10);
+
+  --tx-shadow-lg:
+    0 25px 50px rgb(15 23 42 / .18);
+
+  --tx-speed:.25s;
+}
+
+/* ==========================================================
+    Automatic Dark Theme
+   ========================================================== */
+
+@media (prefers-color-scheme: dark){
+
+:root:not([data-theme]){
+
+  --tx-background:#020617;
+
+  --tx-surface:#0f172a;
+
+  --tx-text:#f8fafc;
+
+  --tx-text-muted:#94a3b8;
+
+  --tx-border:#334155;
+
+}
+
+}
+
+/* ==========================================================
+    Optional Themes
+   ========================================================== */
+
+:root[data-theme="enterprise"]{
+
+  --tx-primary:#2563eb;
+  --tx-secondary:#4f46e5;
+
+}
+
+:root[data-theme="midnight"]{
+
+  --tx-background:#020617;
+  --tx-surface:#0f172a;
+  --tx-text:#f8fafc;
+  --tx-border:#334155;
+
+}
+
+:root[data-theme="emerald"]{
+
+  --tx-primary:#10b981;
+  --tx-secondary:#059669;
+
+}
+
+:root[data-theme="executive"]{
+
+  --tx-primary:#ca8a04;
+  --tx-secondary:#eab308;
+
+}
+
+/* ==========================================================
+    Reset
+   ========================================================== */
+
+*,
+*::before,
+*::after{
+
+  box-sizing:border-box;
+
+}
+
+html{
+
+  scroll-behavior:smooth;
+
+}
+
+html,
+body{
+
+  margin:80 40 50 70;
+
+  padding:0;
+
+  min-height:100%;
+
+  background:var(--tx-background);
+
+  color:var(--tx-text);
+
+  font-family:var(--tx-font);
+
+  text-rendering:optimizeLegibility;
+
+  -webkit-font-smoothing:antialiased;
+
+}
+
+/* ==========================================================
+    Background
+   ========================================================== */
+
+body{
+
+  background:
+
+  radial-gradient(
+    circle at top,
+    rgb(var(--tx-primary-rgb)/.08),
+    transparent 40%
+  ),
+
+  linear-gradient(
+    180deg,
+    transparent,
+    color-mix(in srgb,var(--tx-background) 95%,black)
+  );
+
+}
+
+/* ==========================================================
+   Typography
+   ========================================================== */
+
+h1,h2,h3,h4,h5,h6{
+
+  margin:7px;
+
+  color:var(--tx-text);
+
+}
+
+p{
+
+  color:var(--tx-text-muted);
+
+  line-height:1.7;
+
+}
+
+/* ==========================================================
+   Links
+   ========================================================== */
+
+a{
+
+  text-decoration:none;
+
+  color:inherit;
+
+}
+
+/* ==========================================================
+   Layout
+   ========================================================== */
+
+.tx-container{
+
+  width:min(96vw,var(--tx-container));
+
+  margin-inline:auto;
+
+  padding-inline:clamp(1rem,2vw,2.5rem);
+
+  padding-block:clamp(1rem,2vw,2rem);
+
+}
+
+/* ==========================================================
+   Dashboard Grid
+   ========================================================== */
+
+.tx-dashboard-grid{
+
+  display:grid;
+
+  grid-template-columns:
+
+  repeat(auto-fit,minmax(340px,1fr));
+
+  grid-auto-rows:minmax(220px,auto);
+
+  gap:clamp(1rem,2vw,2rem);
+
+}
+
+/* ==========================================================
+    Cards
+   ========================================================== */
+
+.tx-card{
+
+  background:var(--tx-surface);
+
+  border:1px solid var(--tx-border);
+
+  border-radius:var(--tx-radius);
+
+  box-shadow:var(--tx-shadow-md);
+
+  overflow:hidden;
+
+  padding:1.5rem;
+
+  transition:
+
+  transform var(--tx-speed),
+
+  box-shadow var(--tx-speed),
+
+  border-color var(--tx-speed);
+
+}
+
+.tx-card:hover{
+
+  transform:
+
+  translateY(-5px);
+
+  border-color:
+
+  var(--tx-primary);
+
+  box-shadow:
+
+  var(--tx-shadow-lg);
+
+}
+
+/* ==========================================================
+    Widgets
+   ========================================================== */
+
+.tx-widget{
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:1rem;
+
+}
+
+/* ==========================================================
+    Glass
+   ========================================================== */
+
+.tx-glass{
+
+  backdrop-filter:blur(16px);
+
+  background:
+
+  rgb(255 255 255 /.65);
+
+}
+
+/* ==========================================================
+   Buttons
+   ========================================================== */
+
+.tx-btn{
+
+  display:inline-flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:.5rem;
+
+  padding:.8rem 1.4rem;
+
+  border:none;
+
+  border-radius:12px;
+
+  cursor:pointer;
+
+  color:white;
+
+  background:
+
+  linear-gradient(
+
+  135deg,
+
+  var(--tx-primary),
+
+  var(--tx-secondary)
+
+  );
+
+  transition:all .2s;
+
+}
+
+.tx-btn:hover{
+
+  transform:translateY(-2px);
+
+}
+
+/* ==========================================================
+   Status
+   ========================================================== */
+
+.tx-success{
+
+  color:var(--tx-success);
+
+}
+
+.tx-warning{
+
+  color:var(--tx-warning);
+
+}
+
+.tx-danger{
+
+  color:var(--tx-danger);
+
+}
+
+.tx-info{
+
+  color:var(--tx-info);
+
+}
+
+/* ==========================================================
+   Grid Helpers
+   ========================================================== */
+
+.tx-full{
+
+  grid-column:1/-1;
+
+}
+
+.tx-span-2{
+
+  grid-column:span 2;
+
+}
+
+.tx-span-3{
+
+  grid-column:span 3;
+
+}
+
+.tx-span-4{
+
+  grid-column:span 4;
+
+}
+
+/* ==========================================================
+   Responsive
+   ========================================================== */
+
+@media (max-width:900px){
+
+.tx-dashboard-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.tx-span-2,
+.tx-span-3,
+.tx-span-4{
+
+grid-column:auto;
+
+}
+
+}

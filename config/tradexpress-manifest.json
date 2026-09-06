@@ -1,0 +1,69 @@
+{
+  "name": "TradeXpress Enterprise",
+  "code": "TX",
+  "version": "2.0.0",
+
+  "platform": {
+    "type": "Enterprise AI Trade Intelligence Platform",
+    "environment": "production"
+  },
+
+  "modules": [
+    {
+      "name": "Dashboard",
+      "status": "active"
+    },
+    {
+      "name": "AI Command Center",
+      "status": "active"
+    },
+    {
+      "name": "Customs Brokerage",
+      "status": "active"
+    },
+    {
+      "name": "Logistics Operations",
+      "status": "active"
+    },
+    {
+      "name": "Infrastructure Monitoring",
+      "status": "active"
+    },
+    {
+      "name": "Security Center",
+      "status": "active"
+    },
+    {
+      "name": "Audit Center",
+      "status": "planned"
+    }
+  ],
+
+  "infrastructure": {
+    "frontend": "Vercel",
+    "database": "Supabase",
+    "dns": "Cloudflare",
+    "server": "Ubuntu"
+  },
+
+  "services": {
+    "monitor_api": "api.tradexpress.co",
+    "database": "Supabase",
+    "authentication": "Supabase Auth",
+    "ai": [
+      "Gemini",
+      "Ollama"
+    ]
+  },
+
+  "security": {
+    "firewall": "UFW",
+    "ssl": true,
+    "audit_logging": true
+  },
+
+  "release": {
+    "build": "initial",
+    "released": "2026-08-06"
+  }
+}

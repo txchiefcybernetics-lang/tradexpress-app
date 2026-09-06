@@ -1,0 +1,7 @@
+import { registry } from "./registry";
+import { chatHandler } from "./handlers/chat";
+
+registry.register("chat:send", chatHandler);
+
+export * from "./listener";
+export * from "./resolver";
