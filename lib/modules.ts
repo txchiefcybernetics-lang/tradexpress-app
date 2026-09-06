@@ -1,122 +1,45 @@
-export interface EnterpriseModule {
-  id: string;
-  name: string;
-  category: "core" | "industry";
-  enabled: boolean;
-  route: string;
-  icon: string;
-}
+export const TX_MODULES = {
 
-export const enterpriseModules: EnterpriseModule[] = [
-  // Core Platform
-
-  {
-    id: "dashboard",
-    name: "Dashboard",
-    category: "core",
+  dashboard: {
+    name: "Executive Dashboard",
     enabled: true,
-    route: "/dashboard",
-    icon: "LayoutDashboard",
+    route: "/dashboard"
   },
 
-  {
-    id: "executive",
-    name: "Executive Office",
-    category: "core",
+  ai: {
+    name: "TX AI Command Center",
     enabled: true,
-    route: "/dashboard/executive",
-    icon: "Briefcase",
+    route: "/dashboard/ai"
   },
 
-  {
-    id: "ai",
-    name: "AI Command Center",
-    category: "core",
-    enabled: true,
-    route: "/dashboard/ai",
-    icon: "Brain",
-  },
-
-  {
-    id: "finance",
-    name: "Finance",
-    category: "core",
-    enabled: true,
-    route: "/dashboard/finance",
-    icon: "DollarSign",
-  },
-
-  {
-    id: "hr",
-    name: "Human Resources",
-    category: "core",
-    enabled: true,
-    route: "/dashboard/hr",
-    icon: "Users",
-  },
-
-  {
-    id: "technology",
-    name: "Technology",
-    category: "core",
-    enabled: true,
-    route: "/dashboard/technology",
-    icon: "Cpu",
-  },
-
-  // Industry Modules
-
-  {
-    id: "brokerage",
+  customs: {
     name: "Customs Brokerage",
-    category: "industry",
     enabled: true,
-    route: "/dashboard/brokerage",
-    icon: "FileText",
+    route: "/dashboard/brokerage"
   },
 
-  {
-    id: "logistics",
-    name: "Logistics",
-    category: "industry",
+  logistics: {
+    name: "Logistics Operations",
     enabled: true,
-    route: "/dashboard/logistics",
-    icon: "Truck",
+    route: "/dashboard/logistics"
   },
 
-  {
-    id: "manufacturing",
-    name: "Manufacturing",
-    category: "industry",
-    enabled: false,
-    route: "/dashboard/manufacturing",
-    icon: "Factory",
+  finance: {
+    name: "Finance",
+    enabled: true,
+    route: "/dashboard/finance"
   },
 
-  {
-    id: "healthcare",
-    name: "Healthcare",
-    category: "industry",
-    enabled: false,
-    route: "/dashboard/healthcare",
-    icon: "HeartPulse",
+  security: {
+    name: "Security Center",
+    enabled: true,
+    route: "/dashboard/security"
   },
 
-  {
-    id: "retail",
-    name: "Retail",
-    category: "industry",
-    enabled: false,
-    route: "/dashboard/retail",
-    icon: "ShoppingBag",
-  },
+  technology: {
+    name: "Technology",
+    enabled: true,
+    route: "/dashboard/technology"
+  }
 
-  {
-    id: "education",
-    name: "Education",
-    category: "industry",
-    enabled: false,
-    route: "/dashboard/education",
-    icon: "GraduationCap",
-  },
-];
+};
