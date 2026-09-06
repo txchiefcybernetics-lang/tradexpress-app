@@ -1,0 +1,40 @@
+{
+  "template_id": "dashboard-monitoring-v1",
+  "name": "TradeXpress Infrastructure Monitor",
+  "category": "dashboard",
+
+  "selector": {
+    "theme": "tradexpress-dark",
+    "layout": "enterprise",
+    "version": "2.0.0"
+  },
+
+  "components": [
+    {
+      "id": "system-health",
+      "enabled": true,
+      "position": 1
+    },
+    {
+      "id": "resource-monitor",
+      "enabled": true,
+      "position": 2
+    },
+    {
+      "id": "network-status",
+      "enabled": true,
+      "position": 3
+    },
+    {
+      "id": "audit-ledger",
+      "enabled": true,
+      "position": 4
+    }
+  ],
+
+  "metadata": {
+    "publisher": "TradeXpress",
+    "created": "2026-08-06",
+    "modified": "2026-08-06"
+  }
+}
