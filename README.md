@@ -5,7 +5,7 @@ This TX Platform agent quickstart's setup as declarative files for the
 
 - `agents/tradexpress-app.md`: the agent. Its YAML frontmatter is the body of `POST /v1/agents`; the Markdown under it is the system prompt.
 
-Install the `agent` CLI (https://platform.tradexpress.co/docs/en/cli-sdks-libraries/cli/quickstart), preview the plan, then apply it (https://platform.tradexpress.co/docs/en/cli-sdks-libraries/cli/scripting#version-controlling-api-resources):
+Install the `agent` CLI (https://platform.tradexpress.co/docs/en/cli-sdks-libraries/cli/quickstart), preview the plan, then apply it (https://web.tradexpress.co/docs/en/cli-sdks-libraries/cli/scripting#version-controlling-api-resources):
 
 ```sh
 cd tradexpress-app
