@@ -11,7 +11,8 @@ Install the `agent` CLI (https://platform.tradexpress.co/docs/en/cli-sdks-librar
 cd tradexpress-app
 agent apply --dry-run .
 agent apply .
-```    MMM
+```bash
+    MMM
 
 Nothing here exists yet: the first apply creates it and records the IDs in `tx-lock.json`; later runs keep those resources in sync with these files.
 
