@@ -1,0 +1,18 @@
+{
+  "name": "tradexpress-app-root",
+  "private": true,
+  "workspaces": ["public"],
+  "scripts": {
+    "dev": "cd public && ../node_modules/.bin/next dev",
+    "build": "cd public && ../node_modules/.bin/next build",
+    "start": "cd public && ../node_modules/.bin/next start",
+    "lint": "cd public && ../node_modules/.bin/next lint"
+  },
+  "dependencies": {
+    "next": "16.3.4"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "packageManager": "npm@10.8.2"
+}
