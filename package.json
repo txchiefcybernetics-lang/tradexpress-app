@@ -1,12 +1,14 @@
 {
   "name": "tradexpress-app-root",
   "private": true,
-  "workspaces": ["public"],
+  "workspaces": [
+    "public"
+  ],
   "scripts": {
     "dev": "cd public && ../node_modules/.bin/next dev",
     "build": "cd public && ../node_modules/.bin/next build",
     "start": "cd public && ../node_modules/.bin/next start",
-    "lint": "cd public && ../node_modules/.bin/next lint"
+    "lint": "cd public && ../node_modules/.bin/eslint ."
   },
   "dependencies": {
     "next": "16.3.4"
