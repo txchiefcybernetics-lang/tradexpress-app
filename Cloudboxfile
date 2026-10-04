@@ -1,0 +1,26 @@
+# Base environment layer utilizing standard stable LTS Node binaries
+FROM node:20-alpine
+
+# Set the active isolated runtime directory location inside the image
+WORKDIR /usr/src/app
+
+# Install native system utilities and Python dependencies for proxy workflows
+RUN apk add --no-cache python3 py3-pip build-base
+
+# Copy package tracking arrays and download network service modules
+COPY package*.json ./
+RUN npm install --production
+
+# Bring over your entire underlying source layout architecture configurations
+COPY . .
+
+# Expose communication ports natively (3000 for Core, 8000 for Python Proxy)
+EXPOSE 3000
+EXPOSE 8000
+
+# Install background daemon tool globally inside your container environment
+RUN npm install -g pm2
+
+# Fire up and monitor the entire multi-engine dual stack process layout dynamically
+CMD ["pm2-runtime", "start", "server.js", "--name", "kenwell-tx-core"]
+
