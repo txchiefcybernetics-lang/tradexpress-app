@@ -1,0 +1,28 @@
+{
+  "name": "tradexpress-app-root",
+  "private": true,
+  "workspaces": [
+    "public"
+  ],
+  "scripts": {
+    "dev": "cd public && ../node_modules/.bin/next dev",
+    "build": "cd public && ../node_modules/.bin/next build",
+    "start": "cd public && ../node_modules/.bin/next start",
+    "lint": "cd public && ../node_modules/.bin/eslint ."
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mysql2": "^3.24.5",
+    "next": "16.3.4",
+    "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "packageManager": "npm@10.8.2"
+}
