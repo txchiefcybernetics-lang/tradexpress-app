@@ -15,7 +15,7 @@
     "@vercel/speed-insights": "^2.0.0",
     "ai": "^4.0.127",
     "cors": "^2.8.5",
-    "dotenv": "^16.0.5",
+    "dotenv": "^18.0.5",
     "express": "^4.18.2",
     "framer-motion": "^11.0.0",
     "lucide-react": "^0.300.0",
