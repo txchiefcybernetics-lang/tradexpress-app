@@ -1,4 +1,4 @@
-// File: /home/tx/tradexpress-app/app/workspace/page.tsx
+// File: /vercel/share/v0-project/app/workspace/page.tsx
 import * as entry from '../../../../app/workspace/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

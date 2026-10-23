@@ -1,4 +1,4 @@
-// File: /home/tx/tradexpress-app/app/posts/[slug]/page.tsx
+// File: /vercel/share/v0-project/app/posts/[slug]/page.tsx
 import * as entry from '../../../../../app/posts/[slug]/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
