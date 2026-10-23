@@ -1,4 +1,4 @@
-// File: /home/tx/tradexpress-app/app/api/draft/route.ts
+// File: /vercel/share/v0-project/app/api/draft/route.ts
 import * as entry from '../../../../../app/api/draft/route.js'
 import type { NextRequest } from 'next/server.js'
 
