@@ -1,35 +1,28 @@
 {
-  "name": "tradexpress-app",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "tradexpress-app-root",
+  "private": true,
+  "workspaces": [
+    "public"
+  ],
   "scripts": {
-    "dev": "next dev -p 3001",
-    "build": "next build",
-    "start": "next start"
+    "dev": "cd public && ../node_modules/.bin/next dev",
+    "build": "cd public && ../node_modules/.bin/next build",
+    "start": "cd public && ../node_modules/.bin/next start",
+    "lint": "cd public && ../node_modules/.bin/eslint ."
   },
   "dependencies": {
-    "@posthog/react": "^1.11.3",
-    "@supabase/ssr": "^0.12.7",
-    "@supabase/supabase-js": "^2.117.2",
-    "@vercel/speed-insights": "^2.0.0",
-    "ai": "^4.0.127",
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.5",
-    "express": "^4.18.2",
-    "framer-motion": "^11.0.0",
-    "lucide-react": "^0.300.0",
-    "motion": "^11.0.0",
-    "next": "^14.1.0",
-    "posthog-js": "^1.435.9",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "ws": "^8.16.0",
-    "zod": "^4.6.5"
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mysql2": "^3.24.5",
+    "next": "16.3.4",
+    "sqlite3": "^6.0.1"
   },
   "devDependencies": {
-    "@types/node": "^26.6.4",
-    "@types/react": "^19.3.0",
-    "typescript": "^5.9.3"
-  }
+    "@tailwindcss/postcss": "^4.3.3",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "packageManager": "npm@10.8.2"
 }
