@@ -1,4 +1,4 @@
-APP_TradeXpress = {
+APP_BRAND = {
     "name": "TradeXpress",
     "product": "Enterprise Platform",
 

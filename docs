@@ -1,6 +1,0 @@
-/keys.md
-    pipelines:
-  - name: "production"
-    api_keys:
-      anthropic: "/etc/pgedge/keys/prod-anthropic.key"
-    # ... other pipeline config
