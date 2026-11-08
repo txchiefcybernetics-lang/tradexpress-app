@@ -70,7 +70,7 @@ Broker:
 Purpose:
 Protect TX application code.
 
-[Components]
+Components:
 - Input validation
 - API protection
 - Error handling
@@ -86,7 +86,7 @@ Controls:
 
 ## Layer 5 — API Security
 
-[Purpose]
+Purpose:
 Secure communication between systems.
 
 Components:

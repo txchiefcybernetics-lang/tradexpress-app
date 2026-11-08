@@ -1,3 +1,16 @@
-database.db 
-node_modules/ 
-Downloads/ 
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Environment
+.env
+
+# Database
+*.db
+
+# Logs
+logs/
+
+# OS
+.DS_Store

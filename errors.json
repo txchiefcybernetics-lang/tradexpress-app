@@ -1,7 +1,0 @@
-{
-  "eventName": "NEXT_VERSION",
-  "payload": {
-    "version": "9.0.5-[.].2",
-    "isDevelopment": false
-  }
-}
