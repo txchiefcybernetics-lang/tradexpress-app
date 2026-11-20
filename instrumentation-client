@@ -1,6 +1,0 @@
-export function onRouterTransitionStart(
-  url: string,
-  navigationType: 'push' | 'replace' | 'traverse'
-) {
-  console.log(url, navigationType)
-}
