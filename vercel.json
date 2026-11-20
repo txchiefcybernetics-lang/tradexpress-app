@@ -1,1 +1,5 @@
-{"version": 2} 
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "public/.next"
+}
